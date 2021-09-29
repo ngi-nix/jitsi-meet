@@ -363,6 +363,10 @@ let
 
         npm ${forceOfflineFlag} --nodedir=${nodeSources} ${npmFlags} ${stdenv.lib.optionalString production "--production"} rebuild
 
+        ## npm rebuild may bring in additional executables which need to be
+        ## patched.
+        patchShebangs .
+
         if [ "''${dontNpmInstall-}" != "1" ]
         then
             # NPM tries to download packages even when they already exist if npm-shrinkwrap is used.
