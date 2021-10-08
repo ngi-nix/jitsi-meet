@@ -6,7 +6,7 @@
 
 
     npmlock2nix-repo = {
-      url = "github:tshaynik/npmlock2nix/fetchgit-ref";
+      url = "github:tshaynik/npmlock2nix/fetchgit2";
       flake = false;
     };
   };
@@ -17,7 +17,8 @@
   {
     overlay = final: prev:
       let
-        npmlock2nix = import npmlock2nix-repo { pkgs = prev; };
+        npmlock2nix = import npmlock2nix-repo { pkgs = prev; } //
+         {nodejs = pkgs.nodejs-16_x;};
       in
     {
       my-jitsi-meet = npmlock2nix.build {

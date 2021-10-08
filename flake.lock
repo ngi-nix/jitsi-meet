@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1632639184,
-        "narHash": "sha256-fRLxre+gPxIkjFVj17O68pyAWU1cxT20XFOiulIWzRw=",
+        "lastModified": 1633625029,
+        "narHash": "sha256-Ia3kwnN9DhcskAIElLSKb4u/OK7nZU/P0TkaikAX790=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "fd8a7fd07da0f3fc0e27575891f45c2f88e5dd44",
+        "rev": "781b1f8e3a2194e1e233cd62b4f2193e129a07f7",
         "type": "github"
       },
       "original": {
@@ -19,16 +19,16 @@
     "npmlock2nix-repo": {
       "flake": false,
       "locked": {
-        "lastModified": 1632866943,
-        "narHash": "sha256-wbunpF41MkqTsp6eer2ci/kuURKLVqBVOoLeEz8tN4s=",
+        "lastModified": 1633666020,
+        "narHash": "sha256-AwvFpkKnP9XZeSqCU34mnVXs1ZvbZzAXZZjKe8D5VhY=",
         "owner": "tshaynik",
         "repo": "npmlock2nix",
-        "rev": "c54dab510329088a18e1c983932ac37ed7d6f512",
+        "rev": "9206716f8a58b5cdb52b1240bc4aac546cd3fd63",
         "type": "github"
       },
       "original": {
         "owner": "tshaynik",
-        "ref": "fetchgit-ref",
+        "ref": "fetchgit2",
         "repo": "npmlock2nix",
         "type": "github"
       }
