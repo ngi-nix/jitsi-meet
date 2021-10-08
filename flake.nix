@@ -18,7 +18,7 @@
     overlay = final: prev:
       let
         npmlock2nix = import npmlock2nix-repo { pkgs = prev; } //
-         {nodejs = pkgs.nodejs-16_x;};
+         {nodejs = pkgs.nodejs-12_x;};
       in
     {
       my-jitsi-meet = npmlock2nix.build {
